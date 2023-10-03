@@ -69,7 +69,7 @@ To test the Student API, you can use Postman or any similar API testing tool:
 
 ## Additional Notes
 
-- If you encounter any issues or have questions about using the Student API, please feel free to reach out to our support team at support@example.com.
+- If you encounter any issues or have questions about using the Student API, please feel free to reach out to me at yeswanthrachamalla@gmail.com.
 
 - For more detailed information about the API endpoints and their usage, refer to the API documentation provided in the project's documentation folder.
 
