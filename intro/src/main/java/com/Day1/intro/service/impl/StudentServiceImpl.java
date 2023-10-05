@@ -1,6 +1,7 @@
 package com.Day1.intro.service.impl;
 
-import com.Day1.intro.Controller.model.Student;
+import com.Day1.intro.exception.StudentNotFoundException;
+import com.Day1.intro.model.Student;
 import com.Day1.intro.repository.StudentRepository;
 import com.Day1.intro.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -30,7 +31,7 @@ public class StudentServiceImpl implements StudentService{
     }
     @Override
     public Student getStudentById(Long id){
-        Student student = studentRepository.findById(id).orElseThrow();
+        Student student = studentRepository.findById(id).orElseThrow(()-> new StudentNotFoundException("No Student found for the give id "+id));
         return student;
     }
     @Override
